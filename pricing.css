@@ -1,0 +1,379 @@
+/* Pricing Page Specific Styles */
+
+/* Pricing Hero */
+.pricing-hero {
+    padding: 120px 0 80px 0;
+    background: linear-gradient(135deg, #FAFAFA 0%, #FFFFFF 100%);
+    text-align: center;
+}
+
+.pricing-headline {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.pricing-subheadline {
+    font-size: 20px;
+    color: #666;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Pricing Tiers */
+.pricing-tiers {
+    padding: 80px 0;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.pricing-plan {
+    background: white;
+    border: 2px solid #E5E5E5;
+    border-radius: 16px;
+    padding: 32px 24px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.pricing-plan:hover {
+    border-color: #FF6100;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan.featured {
+    border-color: #FF6100;
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.pricing-plan.featured:hover {
+    transform: scale(1.05) translateY(-4px);
+}
+
+.plan-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF6100;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.plan-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #2A2A2A;
+}
+
+.plan-price {
+    margin-bottom: 12px;
+}
+
+.price-amount {
+    font-size: 48px;
+    font-weight: 800;
+    color: #2A2A2A;
+}
+
+.price-period {
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+}
+
+.plan-description {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+.plan-features {
+    margin-bottom: 32px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.feature:last-child {
+    margin-bottom: 0;
+}
+
+.feature-icon {
+    color: #10a37f;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.feature-text {
+    font-size: 15px;
+    color: #2A2A2A;
+    line-height: 1.4;
+}
+
+.plan-cta {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Included Features */
+.included-features {
+    padding: 80px 0;
+    background: #FAFAFA;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.feature-card {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #E5E5E5;
+    transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    border-color: #FF6100;
+}
+
+.feature-card .feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #2A2A2A;
+}
+
+.feature-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 80px 0;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 48px;
+}
+
+.faq-item {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #E5E5E5;
+    transition: all 0.2s ease;
+}
+
+.faq-item:hover {
+    border-color: #FF6100;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #2A2A2A;
+    line-height: 1.3;
+}
+
+.faq-answer {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Pricing CTA */
+.pricing-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #FF6100 0%, #E55600 100%);
+    text-align: center;
+}
+
+.pricing-cta .cta-headline {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.pricing-cta .cta-subheadline {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-cta .cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.pricing-cta .btn-primary {
+    background: white;
+    color: #FF6100;
+}
+
+.pricing-cta .btn-primary:hover {
+    background: #F8F9FA;
+}
+
+.pricing-cta .btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.pricing-cta .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.pricing-cta .cta-benefits {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .pricing-table {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .pricing-plan.featured {
+        transform: none;
+    }
+    
+    .pricing-plan.featured:hover {
+        transform: translateY(-4px);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-headline {
+        font-size: 36px;
+    }
+    
+    .pricing-table {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .pricing-plan {
+        padding: 24px 20px;
+    }
+    
+    .price-amount {
+        font-size: 40px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .pricing-cta .cta-headline {
+        font-size: 32px;
+    }
+    
+    .pricing-cta .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-hero {
+        padding: 100px 0 60px 0;
+    }
+    
+    .pricing-headline {
+        font-size: 28px;
+    }
+    
+    .pricing-subheadline {
+        font-size: 18px;
+    }
+    
+    .pricing-plan {
+        padding: 20px 16px;
+    }
+    
+    .plan-name {
+        font-size: 20px;
+    }
+    
+    .price-amount {
+        font-size: 32px;
+    }
+    
+    .feature-card {
+        padding: 24px;
+    }
+    
+    .faq-item {
+        padding: 24px;
+    }
+    
+    .pricing-cta .cta-headline {
+        font-size: 28px;
+    }
+}
